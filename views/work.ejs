@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partial/head.ejs') %> 
+
+<body>
+    <%- include('./partial/nav.ejs') %> 
+
+
+    <!-- The work begins from here -->
+    <div class="goods">
+        <div id="working">
+            <div class="workImg">
+                <img src="./images/back slab.jpg" id="SalesImage" alt="">
+                <h3 id="NamePrice" >Back slab <span>₦13,000</span></h3>
+            </div>
+        </div>
+        <div class="description">
+            <div class="cart">
+                <button>Cart <span>0</span></button>
+            </div>
+            <div class="desc">
+                <h3>description</h3>
+                <p>
+                    A back slab is a slab of plaster that does not completely encircle the limb and is used for injuries <br> which have 
+                    resulted in a large amount of swelling.
+                     It is secured with a bandage to accommodate the swelling.</p>
+                     <button id="hide" onclick="view()">How to use</button>
+            </div>
+            <div id="view"></div>
+            
+            <div class="order">
+                <button onclick="increment(1)">-</button>
+                <span id="display">0</span>
+                <button onclick="increment(2)">+</button>
+            </div>
+            <div id="cart">
+                <button onclick="cart('back slab')">Add to cart</button>
+            </div>
+        </div>  
+        </div>
+    </div>
+    
+<div class="footer">
+    <footer style="background-color: white;color:black;">
+        <hr>
+        copyright &copy; Adamsonic medical 2022
+    </footer> 
+</div>
+
+<script src="./js/index.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

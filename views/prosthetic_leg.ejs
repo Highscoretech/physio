@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partial/head.ejs') %> 
+</head>
+<body>
+    <%- include('./partial/nav.ejs') %> 
+  <!-- The work begins from here -->
+
+
+<section id="mobile">
+        <div class="goods">
+            <div id="working">
+                <div class="workImg">
+                    <img src="./images/prosthetic leg.jpg" id="SalesImage" alt="">
+                    <h3 id="NamePrice" >Prosthetic leg (Above knee) <br> <span>₦1,500,000</span></h3>
+                </div>
+
+                <div class="desc">
+                    <h3>Description</h3>
+                    <hr>
+                    <p>
+                        Prosthetic legs, or prostheses, can help people with leg amputations get around more easily. They mimic the function and, sometimes, even the appearance of a real leg. Some people still 
+                        need a cane, walker or crutches to walk with a prosthetic leg, while others can walk freely.</p>
+                        <button id="hide" onclick="view(1)">How to use</button>
+                </div>
+                <h4 id="sucess"></h4>
+              
+                <div class="order">
+                    <button onclick="increment(1)">-</button>
+                    <span id="display">0</span>
+                    <button onclick="increment(2)">+</button>
+                    <div id="cart">
+                        <button onclick="cart(1)">Add to cart</button>
+                    </div>
+                </div>
+                <div id="view"></div>
+               
+            </div>
+
+            
+            
+            
+               
+            </div>  
+            <div class="product">
+                <hr>
+                <h3>Related product</h3>
+            <div class="row">
+                <div class="col"  onclick="product(4)">
+                  <img src="./images/cork-up splint.jpg" class="card-img-top"  alt="...">
+                  <h5 class="card-title">cork-up splint (adult)</h5>
+                </div>
+          
+                <div class="col"  onclick="product(10)">
+                  <img src="images/quoriceps benches.jpg" class="card-img-top"  height="350px" alt="...">
+                </div>
+          
+              <div class="col"  onclick="product(3)">
+                  <img src="images/cork-up splint2.jpg" class="card-img-top" height="350px" alt="...">
+              </div>
+          
+              <div class="view-all">
+                <a href="./products">View all</a>
+              </div>
+          </div>
+          </div>
+    `    </div>
+    <%- include('./partial/footer.ejs') %> 
+</section>
+
+<%- include('./partial/jsLinks.ejs') %> 
+
+</body>
+</html>

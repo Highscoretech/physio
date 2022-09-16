@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partial/head.ejs') %> 
+<body>
+    <%- include('./partial/nav.ejs') %> 
+   <br> <br>
+    <div class="form">
+        
+            <h3>Please provide your details for a successful delivery
+            </h3>
+         <form action="/" method="post">
+            <input type="text" placeholder="First name" name="firstname" required>
+            <input type="text" placeholder="last name" name="lastname" required>
+            <input type="number" placeholder="Phone" name="phone" required>
+            <input type="text" placeholder="Product" name="phone" required>
+            <input type="text" placeholder="Amount" name="lastname" required>
+            <input type="text" placeholder="State" name="state" required>
+            <input type="text" placeholder="Address" name="address" required>
+            <input type="submit" value="continue">
+        </form>
+    </div>
+    <br> <br> 
+
+    <%- include('./partial/footer.ejs') %> 
+
+</body>
+</html>

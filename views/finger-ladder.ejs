@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partial/head.ejs') %> 
+</head>
+<body>
+    <%- include('./partial/nav.ejs') %> 
+  <!-- The work begins from here -->
+  <div class="goods">
+    <div id="working">
+        <div class="workImg">
+            <img src="./images/finger-ladder.jpg" id="SalesImage" alt="">
+            <h3 id="NamePrice" >finger-ladder <span>₦70,000</span></h3>
+        </div>
+
+    <div class="description">
+        <div class="desc">
+            <h3>description</h3>
+            <p>
+                Finger ladders are physical therapy tools often used to progressively restore range of motion to the shoulder, elbow and wrist joints.
+                Typically, these tools are used as part of a rehabilitation program after injury to the rotator cuff or other joint injury.</p>
+                 <button id="hide" onclick="view(6)">How to use</button>
+        </div>
+        <div id="view"></div>
+        <h4 id="sucess"></h4>
+        <div class="order">
+            <button onclick="increment(1)">-</button>
+            <span id="display">0</span>
+            <button onclick="increment(2)">+</button>
+            <div id="cart">
+                <button onclick="cart(6)">Add to cart</button>
+            </div>
+        </div>
+    </div>  
+    </div>
+</div>
+
+<%- include('./partial/footer.ejs') %> 
+</section>
+
+<%- include('./partial/jsLinks.ejs') %> 
+</body>
+</html>

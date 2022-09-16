@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partial/head.ejs') %> 
+</head>
+<body>
+    <%- include('./partial/nav.ejs') %> 
+  <!-- The work begins from here -->
+  <div class="goods">
+    <div id="working">
+        <div class="workImg">
+            <img src="./images/studing frames.jpg" id="SalesImage" alt="">
+            <h3 id="NamePrice" >Reciprocal pulley<span> <br> ₦15,000 - ₦25,000 <br><h5>Depending on the height</h5>
+            </span></h3>
+        </div>
+    </div>
+
+    <div class="description">
+        <div class="cart">
+            <button>Cart <span id="cart">0</span></button>
+            <h4 id="sucess"></h4>
+        </div>
+        <div class="desc">
+            <h3>description</h3>
+            <p>
+                Among the benefits that come with standing frames come healthy bone maintenance,
+                leg muscle stretching, spasticity reduction, improved internal organ functions, improved posture, 
+                and overall range of motion improvement.</p>
+                 <button id="hide" onclick="view(13)">How to use</button>
+        </div>
+        <div id="view"></div>
+        
+        <div class="order">
+            <button onclick="increment(1)">-</button>
+            <span id="display">0</span>
+            <button onclick="increment(2)">+</button>
+        </div>
+        <div id="cart">
+            <button onclick="cart(2)">Add to cart</button>
+        </div>
+    </div>  
+    </div>
+</div>
+
+<div class="footer">
+    <footer style="background-color: white;color:black;">
+        <hr>
+        copyright &copy; Adamsonic medical 2022
+    </footer> 
+</div>
+
+
+<script src="./js/index.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

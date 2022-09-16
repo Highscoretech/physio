@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partial/head.ejs') %> 
+
+<body>
+    <%- include('./partial/nav.ejs') %> 
+  <!-- The work begins from here -->
+<section id="mobile">
+  <div class="goods">
+    <div id="working">
+        <div class="workImg">
+            <img src="./images/Reciprocal pulley.jpg" id="SalesImage" alt="">
+            <h3 id="NamePrice" >Reciprocal pulley<span> <br> Local: ₦4,000 
+            </span></h3>
+        </div>
+
+    <div class="description">
+        <div class="desc">
+            <h3>description</h3>
+            <p>
+                Reciprocal pulley / Pulley exercisers improve range of motion and coordination for those suffering with arthritis, shoulder or arm injuries, or post-surgery stiffness. They can also help with strengthening the arms, shoulders and chest.
+                Pulley exercisers can be mounted over a door, on the floor, or attach to a wall.</p>
+                 <button id="hide" onclick="view(11)">How to use</button>
+        </div>
+        <div id="view"></div>
+        <h4 id="sucess"></h4>
+        
+        <div class="order">
+            <button onclick="increment(1)">-</button>
+            <span id="display">0</span>
+            <button onclick="increment(2)">+</button>
+        </div>
+        <div id="cart">
+            <button onclick="cart(11)">Add to cart</button>
+        </div>
+    </div>  
+    </div>
+</div>
+
+<%- include('./partial/footer.ejs') %> 
+</section>
+
+<%- include('./partial/jsLinks.ejs') %>
+</body>
+</html>

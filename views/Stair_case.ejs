@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partial/head.ejs') %> 
+</head>
+<body>
+    <%- include('./partial/nav.ejs') %> 
+  <!-- The work begins from here -->
+<section id="mobile">
+
+  <div class="goods">
+    <div id="working">
+        <div class="workImg">
+            <img src="./images/stiar case.jpg"  id="SalesImage" alt="">
+            <h3 id="NamePrice" >Stair case  (Adult) <span> ₦250,000 
+            </span></h3>
+        </div>
+
+
+    <div class="description">
+        <div class="desc">
+            <h3>description</h3>
+            <p>
+                Training stairs are used by therapists to train patients with progressive stepping post-surgery or injury. 
+                These stairs are designed ergonomically and provide a comfortable grip. These stairs are lined with anti-slip material that prevents falls during rehab.</p>
+                 <button id="hide" onclick="view(12)">How to use</button>
+        </div>
+        <div id="view"></div>
+        <h4 id="sucess"></h4>
+        
+        <div class="order">
+            <button onclick="increment(1)">-</button>
+            <span id="display">0</span>
+            <button onclick="increment(2)">+</button>
+        </div>
+        <div id="cart">
+            <button onclick="cart(12)">Add to cart</button>
+        </div>
+    </div>  
+    </div>
+</div>
+<%- include('./partial/footer.ejs') %> 
+</section>
+
+<%- include('./partial/jsLinks.ejs') %>
+</body>
+</html>

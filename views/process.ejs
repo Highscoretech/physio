@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partial/head.ejs') %> 
+<body>
+    <%- include('./partial/nav.ejs') %> 
+
+    <% let count = 0 %>
+       <% function increment(e) { %> 
+           <% count = count + 1 %> 
+           <% console.log(count) %> 
+    <% } %> 
+
+    <div class="goods">
+        <img src="./images/back slab.jpg" alt="">
+        <h3>Back slab <span>₦13,000</span></h3>
+        <p id="sucess"></p>
+        <p>
+            A back slab is a slab of plaster that does not completely encircle the limb and is used for injuries <br> which have 
+            resulted in a large amount of swelling.
+             It is secured with a bandage to accommodate the swelling.</p>
+             <div id="view"></div>
+            <button id="hide" onclick="view()">how to use</button>
+    </div>
+    <div class="order">
+        <button onclick=<% increment(1) %>>-</button>
+        <span id="display"> <%= count  %> </span>
+        <button onclick="increment(2)">+</button>
+    </div>
+    <div id="cart">
+        <button onclick="cart('back slab')">Add to cart</button>
+    </div>
+</div> 
+
+<%- include('./partial/footer.ejs') %> 
+
+</body>
+</html>

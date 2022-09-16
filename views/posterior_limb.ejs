@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partial/head.ejs') %> 
+</head>
+<body>
+    <%- include('./partial/nav.ejs') %> 
+  <!-- The work begins from here -->
+<section id="mobile">
+
+  <div class="goods">
+    <div id="working">
+        <div class="workImg">
+            <img src="./images/posterior limb.jpg" id="SalesImage" alt="">
+            <h3 id="NamePrice" >posterior limb (Adult)<span> ₦10,000</span></h3>
+        </div>
+
+    <div class="description">
+        <div class="desc">
+            <h3>description</h3>
+            <p>
+                Next your physiotherapist will physically examine your foot and entire lower extremity. They will palpate, or touch, around your area of discomfort.</p>
+                 <button id="hide" onclick="view(9)">How to use</button>
+        </div>
+        <div id="view"></div>
+        <h4 id="sucess"></h4>
+        
+        <div class="order">
+            <button onclick="increment(1)">-</button>
+            <span id="display">0</span>
+            <button onclick="increment(2)">+</button>
+        </div>
+        <div id="cart">
+            <button onclick="cart(9)">Add to cart</button>
+        </div>
+    </div>  
+    </div>
+</div>
+
+<%- include('./partial/footer.ejs') %> 
+</section>
+
+<%- include('./partial/jsLinks.ejs') %>
+</body>
+</html>

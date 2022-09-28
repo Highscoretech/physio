@@ -9,37 +9,40 @@ function menu(){
 
 const product = ((e)=>{
     if(e == 1){
-        location.href = "/prosthetic_leg"
+        location.href = "/Reciprocal_pulley";
     }
     else if(e == 2){
-        location.href = "/hamstring";
+        location.href = "/wobble_board";   
     }
     else if(e == 3){
-        location.href = "/cork_splint";
-    }
-    else if(e == 4){
         location.href = "/cork_splint_Adult";
     }
+    else if(e == 4){
+        location.href = "/cork_splint";
+    }
     else if(e == 5){
-        location.href = "/Aeroplane_splint";
+        location.href = "/Lumbar_roll";
+      
     }
     else if(e == 6){
         location.href = "/finger-ladder";
     }
     else if(e == 7){
-        location.href = "/long-cork-up-slints";
+        location.href = "/posterior_limb";
+        
     }
     else if(e == 8){
-        location.href = "/Lumbar_roll";
+        location.href = "/back_slab";
     }
     else if(e == 9){
-        location.href = "/posterior_limb";
+        location.href = "/Aeroplane_splint";
     }
     else if(e == 10){
         location.href = "/Quadriceps_benches";
     }
     else if(e == 11){
-        location.href = "/Reciprocal_pulley";
+        location.href = "/prosthetic_leg"
+  
     }
     else if(e == 12){
         location.href ="/Stair_case";

@@ -145,7 +145,7 @@ function cart(e){
             if(e == 1){
                 cartCount = 1
                 location.href = "/one"
-            }
+            } 
             if(e == 2){
                 cartCount = 1
                 location.href = "/two"

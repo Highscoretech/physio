@@ -82,7 +82,39 @@ let mailOptions = {
 
 
 //  Each product
+
 app.get("/one",((req,res)=>{
+    if(!req.session.count){
+        req.session.count = 1
+    }else{
+        req.session.count = 1
+    }
+    let Product = {
+        name : "Reciprocal pulley (Local)",
+        price : '₦4,000',
+        Quantity : 1
+    }
+    res.render('form', {title: "form", Product: Product, count:  req.session.count})
+}))
+
+
+//  Each product
+app.get("/two",((req,res)=>{
+    if(!req.session.count){
+        req.session.count = 1
+    }else{
+        req.session.count = 1
+    }
+    let Product = {
+        name : "Wobble board",
+        price : "₦18,000",
+        Quantity : 1
+    }
+    res.render('form', {title: "form", Product: Product, count:  req.session.count})
+}))
+
+//  Each product
+app.get("/onhhe",((req,res)=>{
     if(!req.session.count){
         req.session.count = 1
     }else{
@@ -110,23 +142,9 @@ app.get("/two",((req,res)=>{
     }
     res.render('form', {title: "form", Product: Product, count:  req.session.count})
 }))
-//  Each product
-app.get("/three",((req,res)=>{
-    if(!req.session.count){
-        req.session.count = 1
-    }else{
-        req.session.count = 1
-    }
-    let Product = {
-        name : "Cock-up splint (kids)",
-        price : "₦5,000",
-        Quantity : 1
-    }
-    res.render('form', {title: "form", Product: Product, count:  req.session.count})
-}))
 
 //  Each product
-app.get("/four",((req,res)=>{
+app.get("/three",((req,res)=>{
     if(!req.session.count){
         req.session.count = 1
     }else{
@@ -141,6 +159,22 @@ app.get("/four",((req,res)=>{
 }))
 
 //  Each product
+app.get("/th",((req,res)=>{
+    if(!req.session.count){
+        req.session.count = 1
+    }else{
+        req.session.count = 1
+    }
+    let Product = {
+        name : "Cock-up splint (kids)",
+        price : "₦5,000",
+        Quantity : 1
+    }
+    res.render('form', {title: "form", Product: Product, count:  req.session.count})
+}))
+
+
+//  Each product
 app.get("/five",((req,res)=>{
     if(!req.session.count){
         req.session.count = 1
@@ -149,8 +183,8 @@ app.get("/five",((req,res)=>{
     }
 
     let Product = {
-        name : "Aeroplane splint",
-        price : "₦5,000",
+        name : "Lumber Roll",
+        price : "₦7,000",
         Quantity : 1
     }
     res.render('form', {title: "form", Product: Product, count:  req.session.count})
@@ -166,7 +200,7 @@ app.get("/six",((req,res)=>{
     
     let Product = {
         name : "finger-ladder",
-        price : "₦70,000",
+        price : "₦100,000",
         Quantity : 1
     }
     res.render('form', {title: "form", Product: Product, count:  req.session.count})
@@ -180,8 +214,8 @@ app.get("/seven",((req,res)=>{
         req.session.count = 1
     }
     let Product = {
-        name : "long cork-up slints (children) ",
-        price : " ₦5,000",
+        name : "Posterior Limb support (Adult)",
+        price : " ₦10,000",
         Quantity : 1
     }
     res.render('form', {title: "form", Product: Product, count:  req.session.count})
@@ -196,8 +230,8 @@ app.get("/eight",((req,res)=>{
         req.session.count = 1
     }
     let Product = {
-        name : "Lumbar roll ",
-        price : "₦7,000",
+        name : "Back Limb",
+        price : "₦13,000",
         Quantity : 1
     }
     res.render('form', {title: "form", Product: Product, count:  req.session.count})
@@ -234,20 +268,7 @@ app.get("/ten",((req,res)=>{
     res.render('form', {title: "form", Product: Product, count:  req.session.count})
 }))
 
-//  Each product
-app.get("/eleven",((req,res)=>{
-    if(!req.session.count){
-        req.session.count = 1
-    }else{
-        req.session.count = 1
-    }
-    let Product = {
-        name : "Reciprocal pulley (Local)",
-        price : '₦4,000',
-        Quantity : 1
-    }
-    res.render('form', {title: "form", Product: Product, count:  req.session.count})
-}))
+
 
 //  Each product
 app.get("/twelve",((req,res)=>{
@@ -279,7 +300,6 @@ app.get("/thirteen",((req,res)=>{
     res.render('form', {title: "form", Product: Product, count:  req.session.count})
 }))
 
-
 app.get("/about",((req,res)=>{
     res.render('about', {title: "About", count:  req.session.count})
 }))
@@ -302,7 +322,6 @@ app.get("/email",((req,res)=>{
     res.render('Email', {title: "Email", count:  req.session.count})
 }))
 
-
 app.get("/process",((req,res)=>{
     res.render('process', {title: "process", count:  req.session.count})
 }))
@@ -315,6 +334,7 @@ app.get("/products", ((req,res)=>{
     }
     res.render('products', {title: "products" , count:  req.session.count})
 }))
+
 // product one
 app.get("/prosthetic_leg", ((req,res)=>{
     if(!req.session.count){
@@ -322,13 +342,22 @@ app.get("/prosthetic_leg", ((req,res)=>{
     }else{
         req.session.count = 0
     }
-
     res.render('prosthetic_leg', {title: "prosthetic_leg", count: req.session.count})
 }))
 
 // product two
+app.get("/wobble_board", ((req,res)=>{
+    res.render('wobble_board', {title: "wobble_board",count:  req.session.count})
+}))
+
+// product 
 app.get("/hamstring", ((req,res)=>{
     res.render('hamstring', {title: "hamstring",  count:  req.session.count})
+}))
+
+// product three
+app.get("/cork_splint_Adult", ((req,res)=>{
+    res.render('cork_splint_adult', {title: "cork_splint_Adult", count:  req.session.count})
 }))
 
 // product three
@@ -336,15 +365,11 @@ app.get("/cork_splint", ((req,res)=>{
     res.render('cork_splint', {title: "cork_splint",count:  req.session.count})
 }))
 
-// product four
-app.get("/cork_splint_Adult", ((req,res)=>{
-    res.render('cork_splint_adult', {title: "cork_splint_Adult", count:  req.session.count})
-}))
-
 // product five
 app.get( "/Aeroplane_splint", ((req,res)=>{
     res.render('Aeroplane_splint', {title: "Aeroplane_splint", count:  req.session.count})
 }))
+
 // product six
 app.get( "/finger-ladder", ((req,res)=>{
     res.render('finger-ladder', {title: "finger-ladder",count:  req.session.count})
@@ -356,8 +381,8 @@ app.get("/long-cork-up-slints", ((req,res)=>{
 }))
 
 // product eight
-app.get("/Lumbar_roll", ((req,res)=>{
-    res.render('Lumbar_roll', {title: "long-cork-up-slints",count:  req.session.count})
+app.get("/back_slab", ((req,res)=>{
+    res.render('back_slab', {title: "Back slab",count:  req.session.count})
 }))
 
 // product nine
@@ -394,10 +419,7 @@ app.get("/Trunk_support", ((req,res)=>{
 app.get("/Tunnel_bath", ((req,res)=>{
     res.render('Tunnel_bath', {title: "Tunnel_bath",count:  req.session.count})
 }))
-// product sixteen
-app.get("/wobble_board", ((req,res)=>{
-    res.render('wobble_board', {title: "wobble_board",count:  req.session.count})
-}))
+
 
 
 

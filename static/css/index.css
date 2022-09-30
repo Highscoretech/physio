@@ -1,776 +1,849 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
 }
 /* Destop */
-@media only screen and ( min-width : 1100px ) {
-    #mobile{
-        display: none;
-    }
-    .content{
-        background-image: url("/images/physiotherapy-pre.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 700px;
-        margin: 0;
-        padding: 0;
-    }
-    header{
-        color: rgb(202, 15, 15);
-        background-color: white;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        height: 70px;
-        width: 100%;
-        position: -webkit-sticky;
-        display: block;
-    }
-    .about{
-        width: 100%;
+@media only screen and (min-width: 1100px) {
+  #mobile {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .content {
+    background-image: url("/images/physiotherapy-pre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    color: rgb(202, 15, 15);
+    background-color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    height: 70px;
+    width: 100%;
+    position: -webkit-sticky;
+    display: block;
+  }
 
-        margin: 20px 20px;
-    }
-    .about a{
-        text-decoration: none;
-        color: rgb(202, 15, 15);
-        background-color: none;
-        padding: 8px 80px;
-        width: 60%;
-        margin: 20px 0px;
-        border-radius: 8px;
-        border: 1px solid rgb(202, 15, 15);
-    }
-    .about a:hover{
-        background-color: rgb(202, 15, 15);
-        color: white;
-    }
-    .logo{
-        width: 5%;
-        float: left;
-        margin: 14px 20px;
-    }
-    .head{
-        width: 60%;
-        margin: 14px 20px;
-        font: 100;
-        position: relative;
-        font-size: 20px;
-        float: left;
-    }
-    .contact{
-        width: 25%;
-        float: left;
-        margin: 15px 20px;  
-    }
-    header .contact a{
-        text-decoration: none;
-        color: rgb(6, 6, 87);
-        font-family:Arial, Helvetica, sans-serif ;
-        font-size: 20px;
-        border: 1px solid rgb(6, 6, 87);
-        padding: 7px;
-        border-radius: 7px;
-    }
-    .body{
-        padding: 200px 40px;
-        /* position: relative; */
-        flex: content;
-        margin:  0px 10px;
-        width: 60%;
-    }
-    .body h2{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 50px;
-        color: rgb(202, 15, 15);
-        font-weight: bold;
-    }
-    .body button{
-        background-color:rgb(202, 15, 15);
-        padding: 10px;
-        width: 30%;
-        color: white;
-        border: none;
-        font-family: cursive;
-        margin: 10px;
-        font-weight: bold;
-        border-radius: 6px;
-    }
-    .body button:hover{
-        background: rgb(202, 15, 15);
-        cursor: pointer;
-    }
-    .slide{
-        background-color: black;
-        width: 100%;
+  .about {
+    width: 100%;
 
-    }
-   
-    .intro{
-        margin: 70px 70px;
-        padding: 50px;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgb(202, 15, 15);
-        box-shadow: 3px 4px 4px 3px #1c1c1c;
-    }
-    .intro a{
-        background-color:rgb(202, 15, 15);
-        color: white;
-        padding: 10px;
-        margin: 30px;
-        text-decoration: none;
-        border-radius: 6px;
-        text-transform: capitalize;
-    }
-    .price{
-        background: black;
-        padding: 0;
-        margin: 40px;
-        text-align: center;
-        border-radius: 30px;
-        font: 100;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: white;
-    }
-    .price h3,hr{
-        padding: 20px;
-        margin: 20px;
-    }
-    .price h3{
-        font-size: 40px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .price img{
-        height: 500px;
-        width: 70%;
-        border-radius: 50px;
-    }
+    margin: 20px 20px;
+  }
+  .about a {
+    text-decoration: none;
+    color: rgb(202, 15, 15);
+    background-color: none;
+    padding: 8px 80px;
+    width: 60%;
+    margin: 20px 0px;
+    border-radius: 8px;
+    border: 1px solid rgb(202, 15, 15);
+  }
+  .about a:hover {
+    background-color: rgb(202, 15, 15);
+    color: white;
+  }
+  .logo {
+    width: 5%;
+    float: left;
+    margin: 14px 20px;
+  }
+  .head {
+    width: 60%;
+    margin: 14px 20px;
+    font: 100;
+    position: relative;
+    font-size: 20px;
+    float: left;
+  }
+  .contact {
+    width: 25%;
+    float: left;
+    margin: 15px 20px;
+  }
+  header .contact a {
+    text-decoration: none;
+    color: rgb(6, 6, 87);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 1px solid rgb(6, 6, 87);
+    padding: 7px;
+    border-radius: 7px;
+  }
+  .body {
+    padding: 200px 40px;
+    /* position: relative; */
+    flex: content;
+    margin: 0px 10px;
+    width: 60%;
+  }
+  .body h2 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 50px;
+    color: rgb(202, 15, 15);
+    font-weight: bold;
+  }
+  .body button {
+    background-color: rgb(202, 15, 15);
+    padding: 10px;
+    width: 30%;
+    color: white;
+    border: none;
+    font-family: cursive;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  .body button:hover {
+    background: rgb(202, 15, 15);
+    cursor: pointer;
+  }
+  .slide {
+    background-color: black;
+    width: 100%;
+  }
 
-    #sucess{
-        background-color: green;
-        color: white;
-        padding: 15px;
-        margin: 10px;
-        font-weight: bold;
-        text-align: center;
-        font-size: 27px;
-        display: none;
-    }
-    .footer{
-        margin: 10px;
-        padding: 10px;
-        width: 100%;
-   }
-    footer{
-        width: 100%;
-        background-color: black;
-        text-align: center;
-        color: white;
-        padding: 30px;
-        bottom: 0;
-    }
-    .form{
-        padding: 0;
-        margin: 0;
-        box-sizing: 0;
-        width: 100%;
-    }
-    .form form{
-        padding: 20px;
-        margin: 0px 350px;
-        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        text-align: center;
-        border-left: 5px solid navy;
-        border-radius: 12px;
-    }
-    .form form input{
-        width: 80%;
-        margin: 14px;
-        padding: 7px;
-    }
-    form input[type='submit']{
-        background-color: navy;
-        color: white;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: bold;
-        border: none;
-        border-radius: 8px;
-        box-shadow: 0px 2px 4px 0px rgb(137, 132, 132)  0px 2px 4px 0px rgb(137, 132, 132);
-    }
-    .relate{
-        width: 100%;
-        padding: 0;
-        margin: 20px;
-       
-        display: block;
-        position: initial;
-    }
-    .product{
-        width: fit-content;
-        display: flexbox;
-        background: none;
-        color: black;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        font-display: normal;
-        justify-content: center;
-        text-align: center;
-    }
-    .product h3{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: bold;
-        font-size: 40px;
-        text-shadow: 1px 3px 3px rgb(56, 53, 53);
-    }
-    img{
-        position: normal;
-    }
-    .view-all{
-        width: 100%;
-        margin: 20px;
-        text-align: center;
-    }
-    .view-all a{
-        background: none;
-        border: 1px solid rgb(202, 15, 15);
-        border-radius: 8px;
-        color: rgb(202, 15, 15);
-        padding: 6px 400px;
-        margin: 12px;
-        width: 80%;
-        text-decoration: none;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+  .intro {
+    margin: 70px 70px;
+    padding: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(202, 15, 15);
+    box-shadow: 3px 4px 4px 3px #1c1c1c;
+  }
+  .intro a {
+    background-color: rgb(202, 15, 15);
+    color: white;
+    padding: 10px;
+    margin: 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    text-transform: capitalize;
+  }
+  .price {
+    background: black;
+    padding: 0;
+    margin: 40px;
+    text-align: center;
+    border-radius: 30px;
+    font: 100;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    color: white;
+  }
+  .price h3,
+  hr {
+    padding: 20px;
+    margin: 20px;
+  }
+  .price h3 {
+    font-size: 40px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .price img {
+    height: 500px;
+    width: 70%;
+    border-radius: 50px;
+  }
 
-    .view-all a:hover{
-        background: rgb(202, 15, 15);
-        color: white;
-    }
-    .goods{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        display: contents;
-        position: relative;
-    }
-    #working{
-        width: 55%;
-        margin: 10px;
-         position: static;
-    }   
-    .workImg{
-        text-align: center;
-        margin: 20px;
-        padding: 10px;
-        float: left;
-        box-shadow: 3px 6px 6px 3px rgba(0, 0, 0, 0.2), 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
-    }
-    .workImg img{
-        border-radius: 12px;
-        width: 600px;
-        height: 500px;
-        margin: 20px;
-    }
-    .workImg h3{
-        padding: 20px 0px;
-        margin: 10px 150px;
-       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.2), 4px 5px 5px 0px rgba(0, 0, 0, 0.19);
-    }
-    .description{
-        width: 40%;
-        height: 720px;
-        float: left;
-        padding: 0px;
-        margin: 4px 10px;
-    }
-    .cart{
-        text-align: left;
-        padding: 20px;
-        width: 100%;
-        padding: 10px ;
-        margin: 10px 0px;
-        box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.2), 4px 5px 5px 0px rgba(0, 0, 0, 0.19);
-    }
-    .cart button{
-        background: none;
-        color: green;
-        font-weight: bold;
-        border: 1px solid green;
-        padding: 6px;
-        width: 25%;
-        border-radius: 40px;
-        margin: 0px 40px;
-    }
-    .cart button:hover{
-        background: green;
-        color: white;
+  #sucess {
+    background-color: green;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 27px;
+    display: none;
+  }
+  .footer {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    bottom: 0;
+  }
+  .form {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    width: 100%;
+  }
+  .form form {
+    padding: 20px;
+    margin: 0px 350px;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    border-left: 5px solid navy;
+    border-radius: 12px;
+  }
+  .form form input {
+    width: 80%;
+    margin: 14px;
+    padding: 7px;
+  }
+  form input[type="submit"] {
+    background-color: navy;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px 0px rgb(137, 132, 132) 0px 2px 4px 0px
+      rgb(137, 132, 132);
+  }
+  .relate {
+    width: 100%;
+    padding: 0;
+    margin: 20px;
 
-    }
-    .desc{
-        text-align: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        padding: 10px 30px;
-        width: 100%;
-        border-radius: 12px;
-        margin: 36px 0px;
-        font-weight: bold;
-        box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.2), 4px 5px 5px 4px rgba(0, 0, 0, 0.19); 
-    }
-    .desc button{
-        background: none;
-        color: green;
-        font-weight: bold;
-        border: 1px solid green;
-        padding: 6px;
-        width: 30%;
-        border-radius: 6px;
-        margin: 0px 40px;
-    }
-    .desc button:hover{
-        background: green;
-        color: white;
-    }
-    #view{
-        padding: 10px 10px;
-        margin: 30px 0px;
-        box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.2), 4px 5px 5px 4px rgba(0, 0, 0, 0.19); 
-        color: green;
-        font-weight: bold;
-        border-radius: 20px;
-    }
-    .order{
-        border: 1px solid green;
-        margin: 0px 10px;
-        text-align: center;
-        background-color: green;
-        border-radius: 12px;
-    }
-    .order button{
-        width: 30%;
-        font-size: 20px;
-        font-weight: bold;
-        border: none;
-        background-color: green;
-        color: white;
-    }
-    .order span{
-      width: 20%;
-      padding: 10px 30px;
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: bold;
-      color: white;
-    }
-    #cart{
-        color: green;
-        padding: 10px;
-        margin: 20px;
-        border: none;
-        text-align: center;
-    }
-    #cart button{
-        background-color: none;
-        border: 1px solid green;
-        font-size: 15px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-weight: bold;
-        padding: 8px;
-        margin: 0px;
-        width: 40%;
-        border-radius: 8px;
-        color: green;
-    }
-    #cart button:hover{
-        margin: 8px;
-        box-shadow: 2px 5px rgb(9, 189, 60);
-    }
+    display: block;
+    position: initial;
+  }
+  .product {
+    width: fit-content;
+    display: flexbox;
+    background: none;
+    color: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: bold;
+    font-display: normal;
+    justify-content: center;
+    text-align: center;
+  }
+  .product h3 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 1px 3px 3px rgb(56, 53, 53);
+  }
+  img {
+    position: normal;
+  }
+  .view-all {
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+  }
+  .view-all a {
+    background: none;
+    border: 1px solid rgb(202, 15, 15);
+    border-radius: 8px;
+    color: rgb(202, 15, 15);
+    padding: 6px 400px;
+    margin: 12px;
+    width: 80%;
+    text-decoration: none;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .view-all a:hover {
+    background: rgb(202, 15, 15);
+    color: white;
+  }
+  .goods {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: contents;
+    position: relative;
+  }
+  #working {
+    width: 55%;
+    margin: 10px;
+    position: static;
+  }
+  .workImg {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    float: left;
+    box-shadow: 3px 6px 6px 3px rgba(0, 0, 0, 0.2),
+      0px 5px 5px 0px rgba(0, 0, 0, 0.19);
+  }
+  .workImg img {
+    border-radius: 12px;
+    width: 600px;
+    height: 500px;
+    margin: 20px;
+  }
+  .workImg h3 {
+    padding: 20px 0px;
+    margin: 10px 150px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.2),
+      4px 5px 5px 0px rgba(0, 0, 0, 0.19);
+  }
+  .description {
+    width: 40%;
+    height: 720px;
+    float: left;
+    padding: 0px;
+    margin: 4px 10px;
+  }
+  .cart {
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.2),
+      4px 5px 5px 0px rgba(0, 0, 0, 0.19);
+  }
+  .cart button {
+    background: none;
+    color: green;
+    font-weight: bold;
+    border: 1px solid green;
+    padding: 6px;
+    width: 25%;
+    border-radius: 40px;
+    margin: 0px 40px;
+  }
+  .cart button:hover {
+    background: green;
+    color: white;
+  }
+  .desc {
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 12px;
+    margin: 36px 0px;
+    font-weight: bold;
+    box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.2),
+      4px 5px 5px 4px rgba(0, 0, 0, 0.19);
+  }
+  .desc button {
+    background: none;
+    color: green;
+    font-weight: bold;
+    border: 1px solid green;
+    padding: 6px;
+    width: 30%;
+    border-radius: 6px;
+    margin: 0px 40px;
+  }
+  .desc button:hover {
+    background: green;
+    color: white;
+  }
+  #view {
+    padding: 10px 10px;
+    margin: 30px 0px;
+    box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.2),
+      4px 5px 5px 4px rgba(0, 0, 0, 0.19);
+    color: green;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+  .order {
+    border: 1px solid green;
+    margin: 0px 10px;
+    text-align: center;
+    background-color: green;
+    border-radius: 12px;
+  }
+  .order button {
+    width: 30%;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: green;
+    color: white;
+  }
+  .order span {
+    width: 20%;
+    padding: 10px 30px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    color: white;
+  }
+  #cart {
+    color: green;
+    padding: 10px;
+    margin: 20px;
+    border: none;
+    text-align: center;
+  }
+  #cart button {
+    background-color: none;
+    border: 1px solid green;
+    font-size: 15px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
+    padding: 8px;
+    margin: 0px;
+    width: 40%;
+    border-radius: 8px;
+    color: green;
+  }
+  #cart button:hover {
+    margin: 8px;
+    box-shadow: 2px 5px rgb(9, 189, 60);
+  }
 }
 
+/* For tablet */
+@media only screen and (min-width: 560px) and (max-width: 1100px) {
+  .destop {
+    display: none;
+  }
+  #mobile {
+    display: none;
+  }
+  .logo {
+    width: 5%;
+    float: left;
+    margin: 14px 20px;
+    padding-right: 70px;
+  }
 
+  header {
+    color: rgb(202, 15, 15);
+    background-color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    height: 70px;
+    width: 50%;
+    position: -webkit-sticky;
+    display: block;
+  }
 
-
-
-
-
-
+  .body h2 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 50px;
+    color: rgb(202, 15, 15);
+    font-weight: bold;
+    padding-top: 30px;
+  }
+  .body button {
+    background-color: rgb(202, 15, 15);
+    padding: 10px;
+    width: 30%;
+    color: white;
+    border: none;
+    font-family: cursive;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+  .body button:hover {
+    background: rgb(202, 15, 15);
+    cursor: pointer;
+  }
+}
 
 /* For mobile */
-@media only screen and ( max-width : 560px ) {
-    .Destop{
-        display: none;
-    }
-    html body{
-        font-family: Rubik, sans-serif;
-    }
-    .nav{
-        height: 40px;
-        width: 100%;
-        display: flex;
-        background-color: white;
-    }
-    .logo{
-        margin: 4px;
-        padding: 4px;
-        width: 60%;
-    }
-    .logo img{
-        height: 35px;
-        width: 37px;
-    }
-    #off-canva{
-        
-        display: none;
-        width: 100%;
-        background-color:white;
-    }
-    #off-canva .canva{
-        display: block;
-        text-align: center;
-        padding: 6px;
-        margin: 12px;
-      
-    }
-    #off-canva .canva .items{
-        background:rgb(215, 6, 6) ;
-        box-shadow: 0px 2px 5px 0px rgba(30, 1, 1, 0.949), 0 4px 15px 0 rgba(49, 1, 1, 0.849);
-        border-radius: 8px;
+@media only screen and (max-width: 560px) {
+  .Destop {
+    display: none;
+  }
+  .destop {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  html body {
+    font-family: Rubik, sans-serif;
+  }
+  .nav {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+  }
+  .logo {
+    margin: 4px;
+    padding: 4px;
+    width: 60%;
+  }
+  .logo img {
+    height: 35px;
+    width: 37px;
+  }
+  #off-canva {
+    display: none;
+    width: 100%;
+    background-color: white;
+  }
+  #off-canva .canva {
+    display: block;
+    text-align: center;
+    padding: 6px;
+    margin: 12px;
+  }
+  #off-canva .canva .items {
+    background: rgb(215, 6, 6);
+    box-shadow: 0px 2px 5px 0px rgba(30, 1, 1, 0.949),
+      0 4px 15px 0 rgba(49, 1, 1, 0.849);
+    border-radius: 8px;
 
-        padding: 4px;
-        margin: 10px 0px;
-        width: 100%;
-        text-align: center;
-    }
-    #off-canva .canva .items a{
-        padding: 6px 100px;
- 
+    padding: 4px;
+    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+  }
+  #off-canva .canva .items a {
+    padding: 6px 100px;
 
-        font-size: 15px;
-        color: white;
-        text-align: center;
+    font-size: 15px;
+    color: white;
+    text-align: center;
 
-        text-decoration: none;
-    }
-    .cart{
-        width: 16%;
-        padding: 5px;
-        margin: 4px;
-    }
-    .cart i{
-        font-size: 32px;
-    }
-    .cart span{
-        position: absolute;
-        padding: 3px;
-        color: white;
-        right: 28%;
-        background: rgb(128, 4, 4);
-        font-size: 18px;
-        border-radius: 50%;
-        top: 2%;
-    }
-    .cart i{
-        text-decoration: none;
-        color:black ;
-    }
-    .menu{
-        width: 14%;
-        padding: 4px;
-        margin: 4px;
-
-    }
-    .menu div{
-        background: rgb(215, 6, 6);
-        height: 5px;
-        width: 35px;
-        margin: 4px;
-        box-shadow: 0px 1px 2px 0px rgba(39, 2, 2, 0.905), 0 1px 5px 0 rgba(43, 2, 2, 0.964);
-
-    }
-    .content{
-        padding: 20px;
-        margin: 20px;
-        background: rgb(215, 6, 6);
-        color: white;
-        box-shadow: 0px 3px 7px 0px rgba(44, 1, 1, 0.938), 0 6px 20px 0 rgba(49, 1, 1, 0.849);
-        font-family: Rubik, sans-serif;
-        border-radius: 12px;
-    }
-    .content h4{
-        font-size: 22px;
-        padding: 6px;
-        font-weight: bolder;
-    }
-    .content a{
-        background: white;
-        color: rgb(215, 6, 6);
-        text-decoration: none;
-        padding: 6px 20px;
-        margin: 7px 0px;
-        border-radius: 7px;
-        box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938), 0 3px 10px 0 rgba(49, 1, 1, 0.849);
-
-     
-    }
-    .price{
-        margin: 10px;
-        padding: 10px;
-
-    }
-    .container img{
-        width: 100%;
-        height: 160px;
-        border-radius: 12px;
-    }
-    .container h3{
-        color: black;
-        letter-spacing: 2px;
-        font-size: 20px;
-
-    }
-    .intro{
-        padding: 10px;
-        margin: 10px;
-        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 20px;
-    }
-    .intro h2{
-        color:rgb(215, 6, 6) ;
-        padding: 10px;
-        margin: 5px;
-        font-family: "Sofia", sans-serif;
-        font-size: 26px;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 2px;
-        word-spacing: 2px;
-    }
-    #sucess{
-        background: green;
-        padding: 6px;
-        margin: 10px;
-        color: white;
-        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 12px;
-    }
-    .intro p{
-        color: black;
-
-    }
-    .intro a {
-        background:rgb(215, 6, 6) ;
-        padding: 6px 20px;
-        margin: 10px;
-        border-radius: 8px;
-        color: white;
-        text-decoration: none;
-        box-shadow: 0px 2px 5px 0px rgba(30, 1, 1, 0.949), 0 4px 15px 0 rgba(49, 1, 1, 0.849);
-    }
-    .row{
-        width: 100%;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-
-    }
-    .col{
-        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.794), 0 3px 10px 0 rgba(22, 22, 22, 0.88);
-        text-align: center;
-        justify-content: center;
-    }
-    .col img{
-        text-align: center;
-        justify-content: center;
-        height: 100px;
-        margin: 5px;
-    }
-    .col h5{
-        font-size: 12px;
-        text-align: center;
-    }
-    .view-all{
-        text-align: center;
-        padding: 10px;
-        margin: 10px;
-    }
-    .view-all a{
-        text-decoration: none;
-        color: rgb(215, 6, 6);
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    .topic{
-        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        padding: 10px;
-        margin: 17px;
-        text-align: center;
-        border-radius: 12px;
-    }
-    .goods{
-        width: 100%;
-        padding: 13px;
-        margin: 0;
-    }
-    #NamePrice{
-        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        padding: 16px;
-        margin: 12px;
-        color:rgb(215, 6, 6) ;
-        font-family: "Sofia", sans-serif;
-        font-size: 20px;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 2px;
-        word-spacing: 2px;
-    }
-    #working{
-        padding: 16px;
-        margin: 12px;
-        text-align: center;
-        justify-content: center;
-        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        border-radius: 9px;
-    }
-    .workImg img{
-        width: 100%;
-        height: 200px;
-        border-radius: 12px;
-    }.desc{
-        padding: 20px;
-        margin: 20px;
-        background: rgb(215, 6, 6);
-        color: white;
-        box-shadow: 0px 3px 7px 0px rgba(44, 1, 1, 0.938), 0 6px 20px 0 rgba(49, 1, 1, 0.849);
-        font-family: Rubik, sans-serif;
-        border-radius: 12px;
-    }
-    .desc button{
-        background:rgb(215, 6, 6) ;
-        padding: 6px 20px;
-        margin: 10px;
-        border-radius: 8px;
-        color: white;
-        text-decoration: none;
-        box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938), 0 3px 10px 0 rgba(49, 1, 1, 0.849);
-       border: none;
-    }
-    #view{
-        padding: 20px;
-        margin: 20px;
-        background: rgb(37, 1, 1);
-        color: white;
-        box-shadow: 0px 3px 7px 0px rgba(44, 1, 1, 0.938), 0 6px 20px 0 rgba(49, 1, 1, 0.849);
-        font-family: Rubik, sans-serif;
-        border-radius: 12px;
-    }
-    .order{
-        padding: 20px;
-        margin: 20px;
-        background: rgb(215, 6, 6);
-        color: white;
-        box-shadow: 0px 3px 7px 0px rgba(44, 1, 1, 0.938), 0 6px 20px 0 rgba(49, 1, 1, 0.849);
-        font-family: Rubik, sans-serif;
-        border-radius: 12px;
-    }
-    .order button{
-        background: white;
-        color: rgb(215, 6, 6);
-        text-decoration: none;
-        padding: 6px 20px;
-        margin: 7px 0px;
-        border-radius: 7px;
-        box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938), 0 3px 10px 0 rgba(49, 1, 1, 0.849);
-    }
-    .order span{
-        font-size: 23px;
-        padding: 7px;
-    }
-    #sucess{
-        padding: 6px;
-        
-    }
-    #cart button{
-        background:rgb(215, 6, 6) ;
-        padding: 6px 20px;
-        margin: 10px;
-        border-radius: 8px;
-        color: white;
-        text-decoration: none;
-        box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938), 0 3px 10px 0 rgba(49, 1, 1, 0.849);
-       border: none;
-    }
-    .form{
-        padding: 20px;
-        margin: 15px;
-        box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938), 0 3px 10px 0 rgba(49, 1, 1, 0.849);
-        background-color: rgb(215, 6, 6);
-        border-radius: 12px;
-    }
-    .form h3{
-        color:white ;
-        padding: 10px;
-        margin: 5px;
-        font-family: "Sofia", sans-serif;
-        font-size: 20px;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 2px;
-        word-spacing: 2px;
-        background:rgb(215, 6, 6) ;
-        box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938), 0 3px 10px 0 rgba(49, 1, 1, 0.849);
-        border-radius: 12px;
-    }
-    .form form{
-        width: 100%;
-        text-align: center;
-
-    }
-    .form form input{
-        width: 100%;
-        padding: 6px;
-        margin: 5px;
-        border-radius: 10px;
-        outline: none;
-        box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938), 0 3px 10px 0 rgba(49, 1, 1, 0.849);
-        background-color: white;
-        border: none;
-    }
-    .form form input[type="submit"]{
-        background:rgb(215, 6, 6) ;
-        color: white;
-        width: 80%;
-    }
-    .found{
-        top: 30%;
-        text-align: center;
-        color: red;
-        padding: 20px;
-        margin: 40px;
-        box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938), 0 3px 10px 0 rgba(49, 1, 1, 0.849);
-
-    }
-    .about h1{
-        box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938), 0 3px 10px 0 rgba(49, 1, 1, 0.849);
-        padding: 20px;
-        margin: 20px;
-        color: black;
-        border-radius: 12px;
-        text-align: center;
-        background-color: white;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .thanks{
-        top: 30%;
-    }
-    .footer{
-        background-color: black;
-        color: white;
-        text-align: center;
-        font-family: Rubik, sans-serif;
-    }
-    footer{
-        padding: 10px;
-        bottom: 0%;
-        font-size: 13px;
-    }
-
-} 
+    text-decoration: none;
+  }
+  .cart {
+    width: 16%;
+    padding: 5px;
+    margin: 4px;
+  }
+  .cart i {
+    font-size: 32px;
+  }
+  .cart span {
+    position: absolute;
+    padding: 3px;
+    color: white;
+    right: 28%;
+    background: rgb(128, 4, 4);
+    font-size: 18px;
+    border-radius: 50%;
+    top: 2%;
+  }
+  .cart i {
+    text-decoration: none;
+    color: black;
+  }
+  .menu {
+    width: 14%;
+    padding: 4px;
+    margin: 4px;
+  }
+  .menu div {
+    background: rgb(215, 6, 6);
+    height: 5px;
+    width: 35px;
+    margin: 4px;
+    box-shadow: 0px 1px 2px 0px rgba(39, 2, 2, 0.905),
+      0 1px 5px 0 rgba(43, 2, 2, 0.964);
+  }
+  .content {
+    padding: 20px;
+    margin: 20px;
+    background: rgb(215, 6, 6);
+    color: white;
+    box-shadow: 0px 3px 7px 0px rgba(44, 1, 1, 0.938),
+      0 6px 20px 0 rgba(49, 1, 1, 0.849);
+    font-family: Rubik, sans-serif;
+    border-radius: 12px;
+  }
+  .content h4 {
+    font-size: 22px;
+    padding: 6px;
+    font-weight: bolder;
+  }
+  .content a {
+    background: white;
+    color: rgb(215, 6, 6);
+    text-decoration: none;
+    padding: 6px 20px;
+    margin: 7px 0px;
+    border-radius: 7px;
+    box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938),
+      0 3px 10px 0 rgba(49, 1, 1, 0.849);
+  }
+  .price {
+    margin: 10px;
+    padding: 10px;
+  }
+  .container img {
+    width: 100%;
+    height: 160px;
+    border-radius: 12px;
+  }
+  .container h3 {
+    color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  .intro {
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+  }
+  .intro h2 {
+    color: rgb(215, 6, 6);
+    padding: 10px;
+    margin: 5px;
+    font-family: "Sofia", sans-serif;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+  #sucess {
+    background: green;
+    padding: 6px;
+    margin: 10px;
+    color: white;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+  }
+  .intro p {
+    color: black;
+  }
+  .intro a {
+    background: rgb(215, 6, 6);
+    padding: 6px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 2px 5px 0px rgba(30, 1, 1, 0.949),
+      0 4px 15px 0 rgba(49, 1, 1, 0.849);
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .col {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.794),
+      0 3px 10px 0 rgba(22, 22, 22, 0.88);
+    text-align: center;
+    justify-content: center;
+  }
+  .col img {
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+    margin: 5px;
+  }
+  .col h5 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .view-all {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .view-all a {
+    text-decoration: none;
+    color: rgb(215, 6, 6);
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  .topic {
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin: 17px;
+    text-align: center;
+    border-radius: 12px;
+  }
+  .goods {
+    width: 100%;
+    padding: 13px;
+    margin: 0;
+  }
+  #NamePrice {
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 16px;
+    margin: 12px;
+    color: rgb(215, 6, 6);
+    font-family: "Sofia", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+  #working {
+    padding: 16px;
+    margin: 12px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 9px;
+  }
+  .workImg img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+  }
+  .desc {
+    padding: 20px;
+    margin: 20px;
+    background: rgb(215, 6, 6);
+    color: white;
+    box-shadow: 0px 3px 7px 0px rgba(44, 1, 1, 0.938),
+      0 6px 20px 0 rgba(49, 1, 1, 0.849);
+    font-family: Rubik, sans-serif;
+    border-radius: 12px;
+  }
+  .desc button {
+    background: rgb(215, 6, 6);
+    padding: 6px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938),
+      0 3px 10px 0 rgba(49, 1, 1, 0.849);
+    border: none;
+  }
+  #view {
+    padding: 20px;
+    margin: 20px;
+    background: rgb(37, 1, 1);
+    color: white;
+    box-shadow: 0px 3px 7px 0px rgba(44, 1, 1, 0.938),
+      0 6px 20px 0 rgba(49, 1, 1, 0.849);
+    font-family: Rubik, sans-serif;
+    border-radius: 12px;
+  }
+  .order {
+    padding: 20px;
+    margin: 20px;
+    background: rgb(215, 6, 6);
+    color: white;
+    box-shadow: 0px 3px 7px 0px rgba(44, 1, 1, 0.938),
+      0 6px 20px 0 rgba(49, 1, 1, 0.849);
+    font-family: Rubik, sans-serif;
+    border-radius: 12px;
+  }
+  .order button {
+    background: white;
+    color: rgb(215, 6, 6);
+    text-decoration: none;
+    padding: 6px 20px;
+    margin: 7px 0px;
+    border-radius: 7px;
+    box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938),
+      0 3px 10px 0 rgba(49, 1, 1, 0.849);
+  }
+  .order span {
+    font-size: 23px;
+    padding: 7px;
+  }
+  #sucess {
+    padding: 6px;
+  }
+  #cart button {
+    background: rgb(215, 6, 6);
+    padding: 6px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938),
+      0 3px 10px 0 rgba(49, 1, 1, 0.849);
+    border: none;
+  }
+  .form {
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938),
+      0 3px 10px 0 rgba(49, 1, 1, 0.849);
+    background-color: rgb(215, 6, 6);
+    border-radius: 12px;
+  }
+  .form h3 {
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    font-family: "Sofia", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    background: rgb(215, 6, 6);
+    box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938),
+      0 3px 10px 0 rgba(49, 1, 1, 0.849);
+    border-radius: 12px;
+  }
+  .form form {
+    width: 100%;
+    text-align: center;
+  }
+  .form form input {
+    width: 100%;
+    padding: 6px;
+    margin: 5px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938),
+      0 3px 10px 0 rgba(49, 1, 1, 0.849);
+    background-color: white;
+    border: none;
+  }
+  .form form input[type="submit"] {
+    background: rgb(215, 6, 6);
+    color: white;
+    width: 80%;
+  }
+  .found {
+    top: 30%;
+    text-align: center;
+    color: red;
+    padding: 20px;
+    margin: 40px;
+    box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938),
+      0 3px 10px 0 rgba(49, 1, 1, 0.849);
+  }
+  .about h1 {
+    box-shadow: 0px 2px 5px 0px rgba(18, 18, 18, 0.938),
+      0 3px 10px 0 rgba(49, 1, 1, 0.849);
+    padding: 20px;
+    margin: 20px;
+    color: black;
+    border-radius: 12px;
+    text-align: center;
+    background-color: white;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .thanks {
+    top: 30%;
+  }
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+  }
+  footer {
+    padding: 10px;
+    bottom: 0%;
+    font-size: 13px;
+  }
+}

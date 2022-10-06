@@ -19,36 +19,6 @@ app.use(
   })
 );
 
-<<<<<<< HEAD
-app.listen( process.env.PORT || 3000)
-app.get("/",((req,res,next)=>{
-    if(!req.session.count){
-        req.session.count = 0
-    }else{
-        req.session.count += 1
-    }
-    res.render('index', {title: "Home", count:  req.session.count})
-}))
-
-app.post("/",((req,res)=>{
-    let fname = req.body.firstname
-    let lname = req.body.lastname
-    let email = req.body.email
-    let phone = req.body.phone
-    let state = req.body.state
-    let address = req.body.address
-    let pname = req.body.Pname
-    let quantity = req.body.Quantity
-    let Price = req.body.price
-    
-    con.connect(function(err) {
-        if (err) throw err;
-        console.log("Connected!");
-        let sql = `INSERT INTO customers (fname,Lname,email,phone,state,address,price,pname,quality) VALUES ?;`;
-        let values = [
-            [fname,lname,email,phone,state,address,Price,pname,quantity]
-        ];
-=======
 app.listen(process.env.PORT || 3000);
 
 app.get("/", (req, res, next) => {
@@ -79,7 +49,6 @@ app.post("/", (req, res) => {
     let values = [
       [fname, lname, email, phone, state, address, Price, pname, quantity],
     ];
->>>>>>> e691765ff317f954a6cb1beb226ac10c274dd0eb
     con.query(sql, [values], function (err, result) {
       if (err) throw err;
       console.log("1 record inserted");
@@ -101,14 +70,8 @@ app.post("/", (req, res) => {
       console.log("Email sent: " + info.response);
     }
   });
-<<<<<<< HEAD
-  res.render('thanks', {title: "thanks", count:  req.session.count})
-
-}))
-=======
   res.render("thanks", { title: "thanks", count: req.session.count });
 });
->>>>>>> e691765ff317f954a6cb1beb226ac10c274dd0eb
 
 //  Each product
 

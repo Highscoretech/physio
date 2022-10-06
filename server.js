@@ -19,10 +19,6 @@ app.use(session({
 }))
 
 app.listen( process.env.PORT || 3000)
-
-
-
-
 app.get("/",((req,res,next)=>{
     if(!req.session.count){
         req.session.count = 0
@@ -31,9 +27,6 @@ app.get("/",((req,res,next)=>{
     }
     res.render('index', {title: "Home", count:  req.session.count})
 }))
-
-
-
 
 app.post("/",((req,res)=>{
     let fname = req.body.firstname
@@ -50,7 +43,6 @@ app.post("/",((req,res)=>{
         if (err) throw err;
         console.log("Connected!");
         let sql = `INSERT INTO customers (fname,Lname,email,phone,state,address,price,pname,quality) VALUES ?;`;
-
         let values = [
             [fname,lname,email,phone,state,address,Price,pname,quantity]
         ];
@@ -79,7 +71,6 @@ let mailOptions = {
   res.render('thanks', {title: "thanks", count:  req.session.count})
 
 }))
-
 
 //  Each product
 

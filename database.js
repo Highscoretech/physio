@@ -6,4 +6,4 @@ const con = mysql.createConnection({
     database: "physiodb"
   });
 
-  module.exports = con;
+module.exports = con;

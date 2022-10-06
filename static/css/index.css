@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Poppins";
     box-shadow: none;
 }
 /* Destop */
@@ -390,18 +391,13 @@
 
 
 
-
-
-
-
-
 /* For mobile */
 @media only screen and ( max-width : 560px ) {
     .Destop{
         display: none;
     }
     html body{
-        font-family: Rubik, sans-serif;
+        font-family: "Poppins";
     }
     .nav{
         height: 40px;
@@ -410,8 +406,8 @@
         background-color: white;
     }
     .logo{
-        margin: 4px;
-        padding: 4px;
+        margin: 6px;
+        padding: 9px;
         width: 60%;
     }
     .logo img{
@@ -454,52 +450,51 @@
     .cart{
         width: 16%;
         padding: 5px;
-        margin: 4px;
+        margin: 6px;
     }
     .cart i{
-        font-size: 32px;
+        font-size: 38px;
     }
     .cart span{
         position: absolute;
         padding: 3px;
         color: white;
-        right: 28%;
+        right: 24%;
         background: rgb(128, 4, 4);
-        font-size: 18px;
+        font-size: 13px;
         border-radius: 50%;
-        top: 2%;
+        top: 1%;
     }
     .cart i{
         text-decoration: none;
-        color:black ;
+        color:rgb(215, 6, 6) ;
     }
     .menu{
         width: 14%;
         padding: 4px;
-        margin: 4px;
-
+        margin: 3px;
     }
     .menu div{
         background: rgb(215, 6, 6);
         height: 5px;
         width: 35px;
-        margin: 4px;
+        margin: 5px;
         box-shadow: 0px 1px 2px 0px rgba(39, 2, 2, 0.905), 0 1px 5px 0 rgba(43, 2, 2, 0.964);
-
     }
     .content{
-        padding: 20px;
-        margin: 20px;
+        padding: 16px;
+        margin: 50px 20px;
         background: rgb(215, 6, 6);
         color: white;
         box-shadow: 0px 3px 7px 0px rgba(44, 1, 1, 0.938), 0 6px 20px 0 rgba(49, 1, 1, 0.849);
-        font-family: Rubik, sans-serif;
         border-radius: 12px;
     }
     .content h4{
-        font-size: 22px;
+        font-size: 23px;
         padding: 6px;
+        line-height: 37px;
         font-weight: bolder;
+        letter-spacing: 1px;
     }
     .content a{
         background: white;
@@ -555,7 +550,7 @@
     }
     .intro p{
         color: black;
-
+        font-size: 19px;
     }
     .intro a {
         background:rgb(215, 6, 6) ;
@@ -591,12 +586,16 @@
     .view-all{
         text-align: center;
         padding: 10px;
-        margin: 10px;
+        margin: 20px;
     }
     .view-all a{
         text-decoration: none;
-        color: rgb(215, 6, 6);
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        background:rgb(215, 6, 6);
+        padding: 6px 50px;
+        margin-top: 10px;
+        border-radius: 8px;
+        width: 50%;
     }
     .topic{
         box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

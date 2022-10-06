@@ -29,7 +29,7 @@ const product = ((e)=>{
     }
     else if(e == 7){
         location.href = "/posterior_limb";
-        
+
     }
     else if(e == 8){
         location.href = "/back_slab";

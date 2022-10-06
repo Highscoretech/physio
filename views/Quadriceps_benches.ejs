@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <%- include('./partial/head.ejs') %> 
-</head>
-<body>
-    <%- include('./partial/nav.ejs') %> 
-  <!-- The work begins from here -->
-<section id="mobile">
+  <head>
+    <%- include('./partial/head.ejs') %>
+  </head>
+  <body>
+    <%- include('./partial/nav.ejs') %>
+    <!-- The work begins from here -->
+    <section id="mobile">
+      <div class="goods">
+        <div id="working">
+          <div class="workImg">
+            <img src="./images/quoriceps benches.jpg" id="SalesImage" alt="" />
+            <h3 id="NamePrice">Quadriceps benches<span> ₦18,000</span></h3>
+          </div>
 
-  <div class="goods">
-    <div id="working">
-        <div class="workImg">
-            <img src="./images/quoriceps benches.jpg" id="SalesImage" alt="">
-            <h3 id="NamePrice" >Quadriceps benches<span> ₦18,000</span></h3>
+          <div class="description">
+            <div class="desc">
+              <h3>description</h3>
+              <p>
+                The Quadriceps Bench is a functional muscle exerciser, allowing
+                a large number of exercises to be performed within minimum floor
+                surface. as well as exercises in a reclining position (for
+                instance knee flexion and hip stretching).
+              </p>
+              <button id="hide" onclick="view(15)">How to use</button>
+            </div>
+            <div id="view"></div>
+            <h4 id="sucess"></h4>
+
+            <div class="order">
+              <button onclick="increment(1)">-</button>
+              <span id="display">0</span>
+              <button onclick="increment(2)">+</button>
+            </div>
+            <div id="cart">
+              <button onclick="cart(15)">Add to cart</button>
+            </div>
+          </div>
         </div>
+      </div>
 
+      <%- include('./partial/footer.ejs') %>
+    </section>
 
-    <div class="description">
-        <div class="desc">
-            <h3>description</h3>
-            <p>
-                The Quadriceps Bench is a functional muscle exerciser, allowing a large number of exercises to be performed within minimum floor surface.
-               as well as exercises in a reclining position (for instance knee flexion and hip stretching).</p>
-                 <button id="hide" onclick="view(10)">How to use</button>
-        </div>
-        <div id="view"></div>
-        <h4 id="sucess"></h4>
-        
-        <div class="order">
-            <button onclick="increment(1)">-</button>
-            <span id="display">0</span>
-            <button onclick="increment(2)">+</button>
-        </div>
-        <div id="cart">
-            <button onclick="cart(10)">Add to cart</button>
-        </div>
-    </div>  
-    </div>
-</div>
-
-<%- include('./partial/footer.ejs') %> 
-</section>
-
-<%- include('./partial/jsLinks.ejs') %>
-</body>
+    <%- include('./partial/jsLinks.ejs') %>
+  </body>
 </html>
